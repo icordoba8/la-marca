@@ -1,0 +1,79 @@
+@import "../../theme-variables"
+.container-selctions
+
+    .selction-1
+        max-width: $width-layout
+        margin: auto
+        position: relative
+        text-align: center
+        .img-bike
+            position: relative
+            top: 0px
+            width: 100%
+        .img-person
+            position: absolute
+            width: 110px
+            top: 70px
+            left: 31%
+            z-index: 1000
+    .selction-2
+        max-width: $width-layout
+        margin: auto
+        position: relative
+        padding: 20px
+        margin-top: 20px
+        color: grey
+        div:nth-child(2)
+            img
+                position: relative
+                top: 4px
+    .selction-3
+        background-image: url('../../images/bg-asset-2.png')
+
+        min-height: 490px
+        margin-bottom: 20px
+        .container
+            max-width: $width-layout
+            margin: auto
+            position: relative
+            padding: 6rem 1rem
+            .row
+                .col
+                    padding: 5rem 3rem
+                    text-align: center
+
+            p
+                color: rgba(255, 255, 255, 0.55)
+    .selction-4
+        max-width: $width-layout
+        margin: auto
+        position: relative
+        .container
+
+            .row
+                .col-lg-6:nth-child(1)
+                    .imag-person-2
+                        width: 100%
+                .col-lg-6:nth-child(2)
+                    color: grey
+                    padding: 2rem 2
+                    p
+                        margin-top: 20px
+
+@media (min-width: 576px)
+    .container-selctions
+        .selction-1
+            .img-bike
+                top: -150px
+                width: 80%
+                max-height: 620px
+            .img-person
+                position: absolute
+                width: 150px
+                top: 27px
+                left: 39%
+        .selction-4
+            .imag-person-2
+                position: absolute
+                top: -250px
+                width: 467px !important
